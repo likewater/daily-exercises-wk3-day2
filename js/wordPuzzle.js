@@ -2,6 +2,10 @@ $(document).ready(function() {
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
     var outputString = inputString.replace(/a/, "-");
+    var outputString = inputString.replace(/e/, "-");
+    var outputString = inputString.replace(/i/, "-");
+    var outputString = inputString.replace(/o/, "-");
+    var outputString = inputString.replace(/u/, "-");
     console.log(outputString);
     event.preventDefault();
   });//closes btn.submit
