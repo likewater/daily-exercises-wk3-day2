@@ -2,14 +2,11 @@ $(document).ready(function() {
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
 debugger;
-    for (var outputA = 0; outputA <= inputString.length; outputA += 1) {
-      $(inputString.replace(/a/, "-"));
-    }
-    //var outputA = inputString.replace(/a/, "-");
-    // var outputAE = outputA.replace(/e/, "-");
-    // var outputAEI = outputAE.replace(/i/, "-");
-    // var outputAEIO = outputAEI.replace(/o/, "-");
-    // var outputString = outputAEIO.replace(/u/, "-");
+    var outputA = inputString.replace(/a/, "-");
+    var outputAE = outputA.replace(/e/, "-");
+    var outputAEI = outputAE.replace(/i/, "-");
+    var outputAEIO = outputAEI.replace(/o/, "-");
+    var outputString = outputAEIO.replace(/u/, "-");
     console.log(index);
     event.preventDefault();
   });//closes btn.submit
