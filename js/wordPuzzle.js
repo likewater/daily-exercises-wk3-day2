@@ -2,8 +2,8 @@ $(document).ready(function() {
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
 debugger;
-    for (var index = 0; index <= inputString.length; index += 1) {
-      $(index.replace(/a/, "-"));
+    for (var outputA = 0; outputA <= inputString.length; outputA += 1) {
+      $(inputString.replace(/a/, "-"));
     }
     //var outputA = inputString.replace(/a/, "-");
     // var outputAE = outputA.replace(/e/, "-");
