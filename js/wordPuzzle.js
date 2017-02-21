@@ -1,12 +1,16 @@
 $(document).ready(function() {
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
+    var inputArray = [inputString.split();];
+    console.log(inputArray);
+    for()
+
     // the following are regular expressions.
-    var outputA = inputString.replace(/a/gi, "-"); // .replace(/a/, "-") will only remove the first letter "a", to remove all "a", need to look globally, and include both capital and lowercase. this is done by adding the "gi". Reference: Dallas and  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
-    var outputAE = outputA.replace(/e/gi, "-");
-    var outputAEI = outputAE.replace(/i/gi, "-");
-    var outputAEIO = outputAEI.replace(/o/gi, "-");
-    var outputString = outputAEIO.replace(/u/gi, "-");
+    // var outputA = inputString.replace(/a/gi, "-"); // .replace(/a/, "-") will only remove the first letter "a", to remove all "a", need to look globally, and include both capital and lowercase. this is done by adding the "gi". Reference: Dallas and  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/replace
+    // var outputAE = outputA.replace(/e/gi, "-");
+    // var outputAEI = outputAE.replace(/i/gi, "-");
+    // var outputAEIO = outputAEI.replace(/o/gi, "-");
+    // var outputString = outputAEIO.replace(/u/gi, "-");
     alert(outputString);
     event.preventDefault();
   });//closes btn.submit
