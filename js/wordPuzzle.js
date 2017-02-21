@@ -1,6 +1,6 @@
 $(document).ready(function() {
     debugger;
-  $("#submitBtn").click(function(event) {
+  $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
     alert(inputString);
     event.preventDefault();
