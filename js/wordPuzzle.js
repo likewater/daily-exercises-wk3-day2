@@ -1,16 +1,16 @@
 $(document).ready(function() {
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
-
+debugger;
     for (var index = 0; index <= inputString.length; index += 1) {
-      inputString.replace(/a/, "-");
+      $(index.replace(/a/, "-"));
     }
     //var outputA = inputString.replace(/a/, "-");
     // var outputAE = outputA.replace(/e/, "-");
     // var outputAEI = outputAE.replace(/i/, "-");
     // var outputAEIO = outputAEI.replace(/o/, "-");
     // var outputString = outputAEIO.replace(/u/, "-");
-    console.log();
+    console.log(index);
     event.preventDefault();
   });//closes btn.submit
 
