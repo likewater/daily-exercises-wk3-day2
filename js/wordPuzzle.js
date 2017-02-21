@@ -1,8 +1,8 @@
 $(document).ready(function() {
-    debugger;
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
-    alert(inputString);
+    var outputString = inputString.replace(/a/, "-");
+    console.log(outputString);
     event.preventDefault();
   });//closes btn.submit
 
