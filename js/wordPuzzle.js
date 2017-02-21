@@ -8,6 +8,7 @@ $(document).ready(function() {
     var outputAEIO = outputAEI.replace(/o/gi, "-");
     var outputString = outputAEIO.replace(/u/gi, "-");
     console.log(index);
+    alert(outputString);
     event.preventDefault();
   });//closes btn.submit
 
