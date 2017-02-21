@@ -1,12 +1,12 @@
 $(document).ready(function() {
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
-debugger;
-    var outputA = inputString.replace(/a/, "-");
-    var outputAE = outputA.replace(/e/, "-");
-    var outputAEI = outputAE.replace(/i/, "-");
-    var outputAEIO = outputAEI.replace(/o/, "-");
-    var outputString = outputAEIO.replace(/u/, "-");
+    // the following are regular expressions.
+    var outputA = inputString.replace(/a/gi, "-"); // .replace(/a/, "-") will only remove the first letter "a", to remove all "a", need to look globally, and include both capital and lowercase. this is done by adding the "gi"
+    var outputAE = outputA.replace(/e/gi, "-");
+    var outputAEI = outputAE.replace(/i/gi, "-");
+    var outputAEIO = outputAEI.replace(/o/gi, "-");
+    var outputString = outputAEIO.replace(/u/gi, "-");
     console.log(index);
     event.preventDefault();
   });//closes btn.submit
