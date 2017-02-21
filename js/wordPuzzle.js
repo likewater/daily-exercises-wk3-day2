@@ -1,12 +1,16 @@
 $(document).ready(function() {
   $("#form1").submit(function(event) {
     var inputString = $("#stringInput").val();
-    var outputA = inputString.replace(/a/, "-");
-    var outputAE = outputA.replace(/e/, "-");
-    var outputAEI = outputAE.replace(/i/, "-");
-    var outputAEIO = outputAEI.replace(/o/, "-");
-    var outputString = outputAEIO.replace(/u/, "-");
-    console.log(outputString);
+
+    for (var index = 0; index <= inputString.length; index += 1) {
+      inputString.replace(/a/, "-");
+    }
+    //var outputA = inputString.replace(/a/, "-");
+    // var outputAE = outputA.replace(/e/, "-");
+    // var outputAEI = outputAE.replace(/i/, "-");
+    // var outputAEIO = outputAEI.replace(/o/, "-");
+    // var outputString = outputAEIO.replace(/u/, "-");
+    console.log();
     event.preventDefault();
   });//closes btn.submit
 
