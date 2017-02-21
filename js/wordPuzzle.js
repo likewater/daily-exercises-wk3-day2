@@ -1,9 +1,8 @@
 $(document).ready(function() {
     debugger;
   $("#submitBtn").click(function(event) {
-    alert("xyz");
     var inputString = $("#stringInput").val();
-    alert("inputString");
+    alert(inputString);
     event.preventDefault();
   });//closes btn.submit
 
